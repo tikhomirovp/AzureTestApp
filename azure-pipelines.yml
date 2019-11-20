@@ -34,4 +34,4 @@ steps:
 
 - task: easytesttask@0
   inputs:
-    testdir: 'aa'
+    testdir: 'ff'
