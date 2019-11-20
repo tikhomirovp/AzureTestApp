@@ -31,4 +31,7 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-    
+
+- task: easytesttask@0
+  inputs:
+    testdir: 'tt'
