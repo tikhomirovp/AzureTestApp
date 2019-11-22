@@ -12,7 +12,7 @@ pool:
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+  buildConfiguration: 'EasyTest'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -41,6 +41,6 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '.\EasyTests\TestsLog.xml'
-    artifact: 'TestsLog.xml'
+    targetPath: '.\EasyTests\'
+    artifact: 'TestsResultFiles'
     publishLocation: 'pipeline'
