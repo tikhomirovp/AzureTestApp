@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBA62382-C9A9-458C-9B00-C9694227C6E3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>XCRM.Module</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XCRM.Module</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EasyTest</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Publish|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Dashboard.v19.2.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Dashboards.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.EF.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Office.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotChart.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.EF.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.EF.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v19.2.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Chart.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.2.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Kpi.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v19.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EntityFramework">
+    <Private>False</Private></Reference>
+    <Reference Include="EntityFramework.SqlServer">
+    <Private>False</Private></Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+    <Reference Include="System.configuration"><Private>False</Private></Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data.SQLite">
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+    <Private>False</Private></Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Web"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    <Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\CreateLinkedSaleBaseDescendantController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CustomDeleteObjectsController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DisableValidationOnDeleteController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\HideToolbarForAddressDetailView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\MyAppUserController.cs" />
+    <Compile Include="Controllers\QualifyLeadController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomDatabaseInitializer.cs" />
+    <Compile Include="Dashboards\SqlDashboardHelper.cs" />
+    <Compile Include="Data\Account.cs" />
+    <Compile Include="Data\Activity.cs" />
+    <Compile Include="Data\Address.cs" />
+    <Compile Include="Data\Category.cs" />
+    <Compile Include="Data\Contact.cs" />
+    <Compile Include="Data\CRMAccount.cs" />
+    <Compile Include="Data\CRMActivity.cs" />
+    <Compile Include="Data\CRMContact.cs" />
+    <Compile Include="Data\CRMInvoice.cs" />
+    <Compile Include="Data\CRMLead.cs" />
+    <Compile Include="Data\CRMOpportunity.cs" />
+    <Compile Include="Data\CRMOrder.cs" />
+    <Compile Include="Data\CRMProduct.cs" />
+    <Compile Include="Data\CRMQuote.cs" />
+    <Compile Include="Data\Customer.cs" />
+    <Compile Include="Data\Invoice.cs" />
+    <Compile Include="Data\Lead.cs" />
+    <Compile Include="Data\Lead_Disqualify.cs" />
+    <Compile Include="Data\Lead_Qualify.cs" />
+    <Compile Include="Data\Lead_SaleStageHistory.cs" />
+    <Compile Include="Data\MyAppUser.cs" />
+    <Compile Include="Data\Note.cs" />
+    <Compile Include="Data\Opportunity.cs" />
+    <Compile Include="Data\Order.cs" />
+    <Compile Include="Data\Person.cs" />
+    <Compile Include="Data\Phone.cs" />
+    <Compile Include="Data\Product.cs" />
+    <Compile Include="Data\Quote.cs" />
+    <Compile Include="Data\SaleBase.cs" />
+    <Compile Include="Data\SaleItem.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\XCRMDbContext.cs" />
+    <Compile Include="DemoDbEngineDetectorHelper.cs" />
+    <Compile Include="DemoEFDatabaseHelper.cs" />
+    <Compile Include="Reports\ActiveInvoices.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ActiveInvoices.Designer.cs">
+      <DependentUpon>ActiveInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContactsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContactsReport.Designer.cs">
+      <DependentUpon>ContactsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SalesHistory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesHistory.Designer.cs">
+      <DependentUpon>SalesHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseSQLAlternativeInfo.cs" />
+    <Compile Include="XCRMModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XCRMModule.Designer.cs">
+      <DependentUpon>XCRMModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Updater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <Subtype>Designer</Subtype>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ActiveInvoices.resx">
+      <DependentUpon>ActiveInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContactsReport.resx">
+      <DependentUpon>ContactsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesHistory.resx">
+      <DependentUpon>SalesHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XCRMModule.resx">
+      <DependentUpon>XCRMModule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SvgImages\Demo_SalesOverview.svg" />
+    <EmbeddedResource Include="SvgImages\Demo_ShippingCountries.svg" />
+    <EmbeddedResource Include="Dashboards\SalesOverview.xml" />
+    <EmbeddedResource Include="Dashboards\GlobalSales.xml" />
+    <EmbeddedResource Include="Images\Demo_SalesOverview.png" />
+    <EmbeddedResource Include="Images\Demo_SalesOverview_32x32.png" />
+    <EmbeddedResource Include="Images\Demo_ShippingCountries.png" />
+    <EmbeddedResource Include="Images\Demo_ShippingCountries_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\EntityFramework.dll" />
+    <Content Include="Dll\EntityFramework.SqlServer.dll" />
+    <Content Include="Dll\System.Data.SQLite.dll" />
+    <Content Include="Dll\System.Data.SQLite.EF6.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    
+    
+  </PropertyGroup>
+</Project>

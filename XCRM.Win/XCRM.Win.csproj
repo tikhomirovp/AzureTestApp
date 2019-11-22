@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C897FFE-B6D7-4768-9F37-CD0414E50BA2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>ExpressApp.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>XCRM.Win</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>XCRM.Win</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EasyTest</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>..\packages\EntityFramework.6.2.0\lib\net45\;..\packages\System.Data.SQLite.Core.1.0.111.0\lib\net451\;..\packages\System.Data.SQLite.EF6.1.0.111.0\lib\net451\;..\packages\System.Data.SQLite.Linq.1.0.111.0\lib\net451\</ReferencePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Dashboard.v19.2.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Dashboard.v19.2.Win">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Dashboards.v19.2">
+      <SpecificVersion>False</SpecificVersion>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Dashboards.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.EF.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Office.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.EF.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotChart.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotChart.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v19.2.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.EF.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v19.2.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Chart.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Chart.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.FileAttachment.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Kpi.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Images.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v19.2.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v19.2.Export">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Sparkline.v19.2.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v19.2.UI">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.BonusSkins.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2.Extensions">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Charts.v19.2.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraWizard.v19.2">
+    <Private>False</Private></Reference>
+    <Reference Include="EntityFramework">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><Private>False</Private></Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+    <Reference Include="System.configuration"><Private>False</Private></Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data.SQLite">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Web"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    <Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="DataScript.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Images\SplashScreenImage.svg" />
+    <Content Include="Dll\EntityFramework.dll" />
+    <Content Include="Dll\EntityFramework.SqlServer.dll" />
+    <Content Include="Dll\System.Data.SQLite.dll" />
+    <Content Include="Dll\System.Data.SQLite.EF6.dll" />
+    <Content Include="Model.xafml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    
+    <Compile Include="DashboardCustomizeController.cs" />
+    <Compile Include="DemoAboutInfoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\DemoApplicationVersionInfo.cs" />
+    <Compile Include="RichTextEditHidePrintController.cs" />
+    <Compile Include="UseSQLAlternativeInfoController.cs" />
+    <Compile Include="XafDemoSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XafDemoSplashScreen.Designer.cs">
+      <DependentUpon>XafDemoSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XAFFeedbackHelper.cs" />
+    <Compile Include="XCRMWinApplication.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XCRMWinApplication.Designer.cs">
+      <DependentUpon>XCRMWinApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="XCRM.sqlite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XafDemoSplashScreen.resx">
+      <DependentUpon>XafDemoSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XCRMWinApplication.resx">
+      <DependentUpon>XCRMWinApplication.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XCRM.Module\XCRM.Module.csproj">
+      <Project>{BBA62382-C9A9-458C-9B00-C9694227C6E3}</Project>
+      <Name>XCRM.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  
+  <PropertyGroup>
+    
+    
+  </PropertyGroup>
+</Project>

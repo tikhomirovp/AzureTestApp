@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options>
+    <LayoutManagerOptions CaptionColon="" />
+  </Options>
+  <BOModel>
+    <Class Name="XCRM.Module.Data.Note">
+      <OwnMembers>
+        <Member Name="Description" PropertyEditorType="DevExpress.ExpressApp.Office.Win.RichTextPropertyEditor" DocumentStorageFormat="HTML" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="LookupProperty" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridLookupPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <DetailView Id="CRMProduct_DetailView">
+      <Items>
+        <PropertyEditor Id="Category" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxLookupPropertyEditor" />
+      </Items>
+    </DetailView>
+    <DetailView Id="Product_DetailView">
+      <Items>
+        <PropertyEditor Id="Category" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxLookupPropertyEditor" />
+      </Items>
+    </DetailView>
+    <ListView Id="Customer_LookupListView">
+      <Columns>
+        <ColumnInfo Id="CreditLimit" PropertyName="CreditLimit" Index="1"  IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="UseSQLAlternativeInfo_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Direction="Horizontal">
+          <LayoutItem Id="InfoStaticImage" ViewItem="InfoStaticImage" Index="0" RelativeSize="12" IsNewNode="True" />
+          <LayoutGroup Id="TextInfoGroup" ShowCaption="False" Index="1" RelativeSize="88" Direction="Vertical" IsNewNode="True">
+            <LayoutItem Id="SQLIssueText"  ViewItem="SQLIssueText" Index="0" IsNewNode="True" />
+            <LayoutItem Id="AlternativeStaticText" ViewItem="AlternativeStaticText" Index="1" IsNewNode="True" />
+            <LayoutItem Id="NoteStaticText" ViewItem="NoteStaticText" Index="2" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
