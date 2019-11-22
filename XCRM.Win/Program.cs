@@ -7,10 +7,6 @@ using Demos.Data;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Security;
 using DevExpress.Persistent.Base;
-// TODO: DXCORE3
-#if !DXCORE3
-using DevExpress.Tutorials;
-#endif
 using DevExpress.XtraEditors;
 
 namespace XCRM.Win {
