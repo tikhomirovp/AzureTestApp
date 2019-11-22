@@ -37,7 +37,7 @@ steps:
 
 - task: easytesttask@0
   inputs:
-    testdir: 'Fixed easy test folder is used'
+    testdir: 'Fixed easy test folder is used1'
 
 - task: PublishPipelineArtifact@1
   inputs:
