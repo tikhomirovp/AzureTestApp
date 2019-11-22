@@ -35,6 +35,12 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      sqllocaldb start MSSQLLocalDB
+      sqllocaldb info MSSQLLocalDB
+
 - task: easytesttask@0
   inputs:
     testdir: 'Fixed easy test folder is used1'
