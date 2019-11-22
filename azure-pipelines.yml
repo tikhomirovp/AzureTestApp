@@ -38,3 +38,9 @@ steps:
 - task: easytesttask@0
   inputs:
     testdir: 'Fixed easy test folder is used'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '.\EasyTests\TestsLog.xml'
+    artifact: 'TestsLog.xml'
+    publishLocation: 'pipeline'
