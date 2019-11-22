@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="UserControls_BaseColorSelector" Codebehind="BaseColorSelector.ascx.cs" %>
-<%@ Register TagPrefix="dx" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
 <a href="javascript:void(0)" class="ThemeButton baseColorLink" title="Current base color: <%= ASPxWebControl.GlobalThemeBaseColor %>" style="position: relative;" id="ColorSelectorButton"><img src="<%= ResolveUrl("~/BaseColorSelector/Images/edtDropDown.png") %>" /><span>Theme Settings</span></a>
 <dx:ASPxPopupControl ID="ColorSelectorPopup" ClientInstanceName="ColorSelectorPopup" CssClass="ColorSelectorPopup" runat="server"
     ShowHeader="False" ShowShadow="false" PopupAnimationType="None"

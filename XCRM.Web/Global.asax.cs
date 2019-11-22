@@ -24,7 +24,7 @@ namespace XCRM.Web {
             AboutInfo.Instance.Copyright = AssemblyInfo.AssemblyCopyright + " All Rights Reserved";
             RouteTable.Routes.RegisterXafRoutes();
             ASPxWebControl.CallbackError += new EventHandler(Application_Error);
-#if DEBUG
+#if EasyTest
             DevExpress.ExpressApp.Web.TestScripts.TestScriptsManager.EasyTestEnabled = true;
 #endif
         }
