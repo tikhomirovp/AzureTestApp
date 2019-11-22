@@ -37,4 +37,4 @@ steps:
 
 - task: easytesttask@0
   inputs:
-    testdir: 'ff'
+    testdir: 'Fixed easy test folder is used'
