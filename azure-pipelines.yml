@@ -18,14 +18,22 @@ steps:
 - task: NuGetToolInstaller@1
 
 - task: DownloadSecureFile@1
+  name: nugetConf
   inputs:
     secureFile: 'nuget.config'
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo $(nugetConf.secureFilePath)
+      xcopy $(nugetConf.secureFilePath)
+
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
     restoreSolution: '$(solution)'
     feedsToUse: 'config'
-    nugetConfigPath: '$(secureFilePath)'
+    nugetConfigPath: '$(nugetConf.secureFilePath)'
 
 - task: VSBuild@1
   inputs:
