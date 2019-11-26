@@ -25,7 +25,7 @@ steps:
     command: 'restore'
     restoreSolution: '$(solution)'
     feedsToUse: 'config'
-    nugetConfigPath: 'nuget.config'
+    nugetConfigPath: '$(secureFilePath)'
 
 - task: VSBuild@1
   inputs:
