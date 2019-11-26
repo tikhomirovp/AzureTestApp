@@ -12,7 +12,7 @@ pool:
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+  buildConfiguration: 'EasyTest'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -35,6 +35,18 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      sqllocaldb start MSSQLLocalDB
+      sqllocaldb info MSSQLLocalDB
+
 - task: easytesttask@0
   inputs:
-    testdir: 'ff'
+    testdir: 'Fixed easy test folder is used1'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '.\EasyTests\'
+    artifact: 'TestsResultFiles'
+    publishLocation: 'pipeline'
