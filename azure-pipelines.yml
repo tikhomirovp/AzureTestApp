@@ -19,7 +19,10 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
+      findstr /?
       find /?
+      cd c:\windows\system32
+      dir
       exit /b 1
 
 - task: NuGetToolInstaller@1
