@@ -14,12 +14,14 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'EasyTest'
 
+steps:
+
 - task: CmdLine@2
   inputs:
     script: |
       find /?
       exit /b 1
-steps:
+
 - task: NuGetToolInstaller@1
 
 - task: DownloadSecureFile@1
