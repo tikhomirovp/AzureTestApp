@@ -54,8 +54,7 @@ steps:
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll XCRM.Win\bin\Debug /Y
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll XCRM.Web\bin /Y
       EasyTestBin\TestExecutor.v19.2.exe EasyTests
-      echo %ErrorLevel%
-      if %ErrorLevel% neq 0 exit 1
+      find "Result=""Failed""" EasyTests\TestsLog.xml && exit 1
 
 - task: PublishPipelineArtifact@1
   condition: succeededOrFailed()
