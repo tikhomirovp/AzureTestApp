@@ -12,7 +12,8 @@
 			Name="XCRMFullWeb"
 			Url="http://localhost:4030"
 			PhysicalPath="[ConfigPath]\..\XCRM.Web"
-			AdapterFileName="[ConfigPath]\..\XCRM.Web\bin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll"/>
+			AdapterFileName="[ConfigPath]\..\XCRM.Web\bin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll"
+			IgnoreCase="true"/>
 		<!-- For IIS -->
 		<!--Application
 			Name="XCRMFullWeb"
