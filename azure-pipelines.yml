@@ -58,8 +58,11 @@ steps:
       xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Web\bin /Y
       Start EasyTests
       EasyTestBin\TestExecutor.v19.2.exe EasyTests
-      FIND "Result=""Failed""" "EasyTests\TestsLog.xml" && exit 1
-      FIND "Result=""Warning""" "EasyTests\TestsLog.xml" && exit 1
+      cd EasyTests
+      FIND "Result=""Failed""" TestsLog.xml && exit 1
+      FIND "Result=""Warning""" TestsLog.xml && exit 1
+
+
 
 
 - task: PublishPipelineArtifact@1
