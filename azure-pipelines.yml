@@ -15,6 +15,7 @@ variables:
   buildConfiguration: 'EasyTest'
 
 steps:
+
 - task: NuGetToolInstaller@1
 
 - task: DownloadSecureFile@1
@@ -48,14 +49,19 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: |
+    script: |      
+      echo Start MSSQLLocalDB    
       sqllocaldb start MSSQLLocalDB
-      sqllocaldb info MSSQLLocalDB
+      Start copy EasyTest Files
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll XCRM.Win\bin\Debug /Y
+      xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Win\bin\Debug /Y
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll XCRM.Web\bin /Y
+      xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Web\bin /Y
+      Start EasyTests
       EasyTestBin\TestExecutor.v19.2.exe EasyTests
-      echo %ErrorLevel%
-      if %ErrorLevel% neq 0 exit 1
+      cd EasyTests
+      FINDSTR "Result=""Failed""" TestsLog.xml && exit 1
+      FINDSTR "Result=""Warning""" TestsLog.xml && exit 1
 
 - task: PublishPipelineArtifact@1
   condition: succeededOrFailed()
