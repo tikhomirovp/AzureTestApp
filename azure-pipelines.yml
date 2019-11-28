@@ -52,9 +52,7 @@ steps:
       sqllocaldb start MSSQLLocalDB
       sqllocaldb info MSSQLLocalDB
       echo Start EasyTest
-      dir
-      cd EasyTestBin
-      TestExecutor.v19.2.exe ..\EasyTests
+      EasyTestBin\TestExecutor.v19.2.exe EasyTests
 
 - task: PublishPipelineArtifact@1
   condition: succeededOrFailed()
