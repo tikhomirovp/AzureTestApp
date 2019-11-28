@@ -51,10 +51,8 @@ steps:
     script: |
       sqllocaldb start MSSQLLocalDB
       sqllocaldb info MSSQLLocalDB
-
-- task: easytesttask@0
-  inputs:
-    testdir: 'Fixed easy test folder is used1'
+      echo Start EasyTest
+      EasyTestBin\TestExecutor.v19.2.exe EasyTests
 
 - task: PublishPipelineArtifact@1
   inputs:
