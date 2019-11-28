@@ -53,6 +53,8 @@ steps:
       sqllocaldb info MSSQLLocalDB
       echo Start EasyTest
       EasyTestBin\TestExecutor.v19.2.exe EasyTests
+      if %ErrorLevel% neq 0 exit /b 1
+
 
 - task: PublishPipelineArtifact@1
   condition: succeededOrFailed()
