@@ -48,11 +48,15 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: |
+    script: |      
+      echo Start MSSQLLocalDB    
       sqllocaldb start MSSQLLocalDB
-      sqllocaldb info MSSQLLocalDB
+      Start copy EasyTest Files
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll XCRM.Win\bin\Debug /Y
+      xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Win\bin\Debug /Y
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll XCRM.Web\bin /Y
+      xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Web\bin /Y
+      Start EasyTests
       EasyTestBin\TestExecutor.v19.2.exe EasyTests
       find "Result=""Failed""" EasyTests\TestsLog.xml && exit 1
 
