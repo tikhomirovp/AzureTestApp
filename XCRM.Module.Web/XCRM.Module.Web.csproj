@@ -65,9 +65,6 @@
     <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.DataAccess.19.2.3\lib\net452\DevExpress.DataAccess.v19.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.EasyTest.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.EasyTest.19.2.3\lib\net452\DevExpress.EasyTest.v19.2.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.ExpressApp.AuditTrail.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.ExpressApp.AuditTrail.19.2.3\lib\net452\DevExpress.ExpressApp.AuditTrail.v19.2.dll</HintPath>
     </Reference>
@@ -88,9 +85,6 @@
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Dashboards.Web.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.ExpressApp.Dashboards.Web.19.2.3\lib\net452\DevExpress.ExpressApp.Dashboards.Web.v19.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.ExpressApp.EasyTest.WebAdapter.19.2.3\lib\net452\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.EF.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.ExpressApp.EF.19.2.3\lib\net452\DevExpress.ExpressApp.EF.v19.2.dll</HintPath>

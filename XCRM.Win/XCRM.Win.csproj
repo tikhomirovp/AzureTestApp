@@ -140,9 +140,6 @@
     <Reference Include="DevExpress.Diagram.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.Diagram.Core.19.2.3\lib\net452\DevExpress.Diagram.v19.2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.EasyTest.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.EasyTest.19.2.3\lib\net452\DevExpress.EasyTest.v19.2.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.ExpressApp.AuditTrail.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.ExpressApp.AuditTrail.19.2.3\lib\net452\DevExpress.ExpressApp.AuditTrail.v19.2.dll</HintPath>
     </Reference>
@@ -163,9 +160,6 @@
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Dashboards.Win.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.ExpressApp.Dashboards.Win.19.2.3\lib\net452\DevExpress.ExpressApp.Dashboards.Win.v19.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.ExpressApp.EasyTest.WinAdapter.19.2.3\lib\net452\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.EF.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.ExpressApp.EF.19.2.3\lib\net452\DevExpress.ExpressApp.EF.v19.2.dll</HintPath>
