@@ -16,15 +16,6 @@ variables:
 
 steps:
 
-- task: CmdLine@2
-  inputs:
-    script: |
-      findstr /?
-      find /?
-      cd c:\windows\system32
-      dir
-      exit /b 1
-
 - task: NuGetToolInstaller@1
 
 - task: DownloadSecureFile@1
@@ -69,11 +60,8 @@ steps:
       Start EasyTests
       EasyTestBin\TestExecutor.v19.2.exe EasyTests
       cd EasyTests
-      FIND "Result=""Failed""" TestsLog.xml && exit 1
-      FIND "Result=""Warning""" TestsLog.xml && exit 1
-
-
-
+      FINDSTR "Result=""Failed""" TestsLog.xml && exit 1
+      FINDSTR "Result=""Warning""" TestsLog.xml && exit 1
 
 - task: PublishPipelineArtifact@1
   condition: succeededOrFailed()
