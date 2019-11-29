@@ -13,8 +13,7 @@
 			Url="http://localhost:4030"
 			PhysicalPath="[ConfigPath]\..\XCRM.Web"
 			AdapterFileName="[ConfigPath]\..\XCRM.Web\bin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll"
-			UseIISExpress="True"
-			IgnoreCase="true"/>
+			UseIISExpress="True"/>
 		<!-- For IIS -->
 		<!--Application
 			Name="XCRMFullWeb"
