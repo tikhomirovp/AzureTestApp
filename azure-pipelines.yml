@@ -15,13 +15,6 @@ variables:
   buildConfiguration: 'EasyTest'
 
 steps:
-
-- task: CmdLine@2
-  inputs:
-    script: |
-      cd C:\Windows\assembly\GAC\Microsoft.mshtml\
-      dir
-
 - task: NuGetToolInstaller@1
 
 - task: DownloadSecureFile@1
@@ -63,6 +56,7 @@ steps:
       xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Win\bin\Debug /Y
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll XCRM.Web\bin /Y
       xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Web\bin /Y
+      xcopy EasyTestBin\Microsoft.mshtml.dll XCRM.Web\bin /Y
       Start EasyTests
       EasyTestBin\TestExecutor.v19.2.exe EasyTests
       cd EasyTests
