@@ -16,6 +16,12 @@ variables:
 
 steps:
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      cd C:\Windows\assembly\GAC\Microsoft.mshtml\
+      dir
+
 - task: NuGetToolInstaller@1
 
 - task: DownloadSecureFile@1
