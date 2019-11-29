@@ -49,19 +49,25 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |      
-      echo Start MSSQLLocalDB    
+      echo Starting MSSQLLocalDB    
       sqllocaldb start MSSQLLocalDB
-      Start copy EasyTest Files
+      Starting copy EasyTest Files
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll XCRM.Win\bin\Debug /Y
       xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Win\bin\Debug /Y
       xcopy EasyTestBin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll XCRM.Web\bin /Y
       xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Web\bin /Y
       xcopy EasyTestBin\Microsoft.mshtml.dll XCRM.Web\bin /Y
-      Start EasyTests
+      Starting EasyTests
       EasyTestBin\TestExecutor.v19.2.exe EasyTests
-      cd EasyTests
-      FINDSTR "Result=""Failed""" TestsLog.xml && exit 1
-      FINDSTR "Result=""Warning""" TestsLog.xml && exit 1
+      cd Finished     
+      FINDSTR "Result=""Failed""" TestsLog.xml && (
+        Result="Failed" true
+        exit 1
+        )
+      FINDSTR "Result=""Warning""" TestsLog.xml && (
+        Result="Warning" true
+        exit 1
+        )
 
 - task: PublishPipelineArtifact@1
   condition: succeededOrFailed()
