@@ -58,13 +58,12 @@ steps:
       xcopy EasyTestBin\DevExpress.EasyTest.v19.2.dll XCRM.Web\bin /Y
       xcopy EasyTestBin\Microsoft.mshtml.dll XCRM.Web\bin /Y
       Starting EasyTests
-      EasyTestBin\TestExecutor.v19.2.exe EasyTests
-      cd Finished     
-      FINDSTR "Result=""Failed""" TestsLog.xml && (
+      EasyTestBin\TestExecutor.v19.2.exe EasyTests  
+      FINDSTR "Result=""Failed""" EasyTests\TestsLog.xml && (
         Result="Failed" true
         exit 1
         )
-      FINDSTR "Result=""Warning""" TestsLog.xml && (
+      FINDSTR "Result=""Warning""" EasyTests\TestsLog.xml && (
         Result="Warning" true
         exit 1
         )
