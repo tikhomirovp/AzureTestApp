@@ -5,7 +5,7 @@ param(
 [string]$WebBinPath="XCRM.Web\bin"
 ) 
 
-#sqllocaldb start MSSQLLocalDB
+sqllocaldb start MSSQLLocalDB
 
 Copy-Item -Path $easyTestBinPath\*.dll -Destination $WinBinPath -exclude DevExpress.ExpressApp.EasyTest.WebAdapter*
 Copy-Item -Path $easyTestBinPath\*.dll -Destination $WebBinPath -exclude DevExpress.ExpressApp.EasyTest.WinAdapter*
@@ -15,3 +15,5 @@ $testExecutorPath = $easyTestBinPath + "\" + $testExecutorItem[0].Name
 
 & $testExecutorPath $easyTestPath
 
+$easyTestLogPath = $easyTestPath + "\TestsLog.xml"
+if(Select-String -Pattern 'Result="Failed"', 'Result="Warning"' -Path $easyTestLogPath) { exit 1 }
