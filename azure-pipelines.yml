@@ -47,6 +47,7 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: CmdLine@2
+  displayName: EasyTest
   inputs:
     script: |      
       echo Starting MSSQLLocalDB    
