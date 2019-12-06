@@ -22,12 +22,6 @@ steps:
   inputs:
     secureFile: 'nuget.config'
 
-- task: CmdLine@2
-  inputs:
-    script: |
-      echo $(nugetConf.secureFilePath)
-      xcopy $(nugetConf.secureFilePath)
-
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
